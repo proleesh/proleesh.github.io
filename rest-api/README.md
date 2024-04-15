@@ -1,5 +1,5 @@
 ---
-description: "작성자: \b이성혁"
+description: '작성자: 이성혁'
 ---
 
 # 1장 REST 소개
