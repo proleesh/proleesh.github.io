@@ -16,7 +16,8 @@ const current = year - 2019;
 document.getElementById('current').textContent = current;
 
 document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && e.key === 's') {
+    // for Windows -> ctrlKey, for macOS -> metaKey
+    if ((e.ctrlKey || e.metaKey) && e.key === 's') {
         e.preventDefault();
     }
 })
