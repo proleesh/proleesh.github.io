@@ -14,3 +14,13 @@ document.querySelector(".profile-photo").onerror = function () {
 // Year calculation
 const current = year - 2019;
 document.getElementById('current').textContent = current;
+
+document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+    }
+})
+
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+})
