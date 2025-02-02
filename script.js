@@ -1,0 +1,16 @@
+const getYear = new Date().getFullYear();
+// Automatically update copyright year
+const year = document.getElementById("year").textContent = getYear
+
+showContact = () => {
+    alert("🧑🏻‍💻CONTACT:\n📲Tel:+82 10-9482-6726\n📧Email 1:merci726@yahoo.com\n📧Email 2:sunghyuklee@proton.me");
+}
+
+// 이미지처리 실패인 경우 API적용
+document.querySelector(".profile-photo").onerror = function () {
+    this.src = "https://placehold.co/300x400";
+};
+
+// Year calculation
+const current = year - 2019;
+document.getElementById('current').textContent = current;

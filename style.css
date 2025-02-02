@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  padding-bottom: 60px; /* 为页脚留出空间 */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-section {
+  flex: 2;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 15px;
+  font-family: "Ubuntu-Bold";
+}
+
+h2 {
+  color: #666;
+  margin-bottom: 20px;
+  font-family: "Ubuntu-Bold";
+}
+
+p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-family: "Ubuntu";
+}
+button {
+  font-family: "Ubuntu-Bold";
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #3c2257;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "Ubuntu-Bold";
+}
+
+span {
+  font-family: "Ubuntu-Bold";
+}
+b {
+  font-family: "Ubuntu-Bold";
+}
+
+.contact-btn {
+  background-color: #3c2257;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-btn:hover {
+  background-color: #57466a;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .profile-photo {
+    max-width: 200px;
+  }
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(Ubuntu/Ubuntu-Regular.ttf.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url(Ubuntu/Ubuntu-Bold.ttf);
+}
