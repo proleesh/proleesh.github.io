@@ -106,7 +106,7 @@ b {
 }
 @font-face {
   font-family: "Ubuntu";
-  src: url(Ubuntu/Ubuntu-Regular.ttf.ttf);
+  src: url(Ubuntu/Ubuntu-Regular.ttf);
 }
 @font-face {
   font-family: "Ubuntu-Bold";
