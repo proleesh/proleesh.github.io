@@ -30,3 +30,20 @@ document.addEventListener('cut', e => e.preventDefault())
 document.addEventListener('contextmenu', (e) => {
     e.preventDefault();
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 1) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    document.body.addEventListener("contextmenu", (e) => {
+        e.preventDefault()
+    });
+    document.body.addEventListener("selectstart", (e) => {
+        e.preventDefault()
+    })
+})
+document.addEventListener("selectionchange", () => {
+    window.getSelection().removeAllRanges();
+})
