@@ -20,7 +20,12 @@ document.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 's') {
         e.preventDefault();
     }
+    if (e.key === 'F12') {
+        e.preventDefault();
+    }
 })
+document.addEventListener('copy', e => e.preventDefault())
+document.addEventListener('cut', e => e.preventDefault())
 
 document.addEventListener('contextmenu', (e) => {
     e.preventDefault();
