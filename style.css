@@ -61,6 +61,12 @@ h2 {
   font-family: "Ubuntu-Bold";
 }
 
+h5{
+  color: #555;
+  margin-bottom: 9px;
+  font-family: "Ubuntu-Bold";
+}
+
 p {
   color: #444;
   line-height: 1.6;
